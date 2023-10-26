@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AffichDemandeController">
+   <children>
+      <Label layoutX="15.0" layoutY="66.0" text="Vos Demande D'évenement :">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvDemande" layoutX="15.0" layoutY="117.0" prefHeight="259.0" prefWidth="705.0">
+        <columns>
+          <TableColumn fx:id="colIdDemande" prefWidth="78.0" style="-fx-alignment: center;" text="Id demande" />
+          <TableColumn fx:id="colDestDemande" prefWidth="189.0" style="-fx-alignment: center;" text="Destination" />
+            <TableColumn fx:id="colDateDemande" prefWidth="218.0" style="-fx-alignment: center;" text="Date de depart" />
+            <TableColumn fx:id="colTypeDemande" minWidth="0.0" prefWidth="219.0" style="-fx-alignment: center;" text="Thème" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnModifierDem" layoutX="39.0" layoutY="383.0" mnemonicParsing="false" onAction="#updateDemande" prefHeight="58.0" prefWidth="265.0" style="-fx-background-color: #3db8ff;" text="Modifier" textFill="#fcf6f6">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSupprimerDem" layoutX="368.0" layoutY="383.0" mnemonicParsing="false" onAction="#deleteDemande" prefHeight="58.0" prefWidth="265.0" style="-fx-background-color: #ffffff; -fx-border-color: #070707;" text="   Supprimer" textFill="#070707">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRetourAjoutDem" layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToDem" text="Retour" />
+
+   
+   </children>
+</AnchorPane>

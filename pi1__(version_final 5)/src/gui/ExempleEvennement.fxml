@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="270.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ExempleEvennementController">
+   <children>
+      <ImageView fitHeight="272.0" fitWidth="336.0" layoutY="-1.0">
+         <image>
+            <Image url="@../Resources/epicjourneys.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="113.0" layoutY="219.0" mnemonicParsing="false" onAction="#Tcheckit" prefHeight="30.0" prefWidth="99.0" text=" money plz" />
+      <ComboBox fx:id="nbeP" layoutX="15.0" layoutY="221.0" onAction="#NbrP" prefHeight="26.0" prefWidth="74.0" />
+      <Button fx:id="exeshowdetait" layoutX="220.0" layoutY="142.0" mnemonicParsing="false" onAction="#ShowDetaitEvennemenet" text="more detail" />
+      <Label fx:id="exetitre" layoutX="52.0" layoutY="14.0" prefHeight="30.0" prefWidth="277.0" text="welcome to klibia">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="exeetat" layoutX="271.0" layoutY="71.0" prefHeight="18.0" prefWidth="62.0" text="oued kasab" />
+      <Label layoutX="210.0" layoutY="72.0" text="we go to: " />
+      <Label layoutX="210.0" layoutY="43.0" prefHeight="18.0" prefWidth="62.0" text="le prix:" />
+      <ImageView fx:id="eximage" fitHeight="150.0" fitWidth="200.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="213.0" layoutY="101.0" text="we stay :" />
+      <Label fx:id="exeprix" layoutX="278.0" layoutY="44.0" text="100dt" />
+      <Label fx:id="exduree" layoutX="272.0" layoutY="100.0" prefHeight="18.0" prefWidth="49.0" text="3days" />
+      <Label layoutX="14.0" layoutY="200.0" prefHeight="18.0" prefWidth="99.0" text="nbrs personne" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="13.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ReservationWindowController">
+   <children>
+      <Label fx:id="rstitrepage" layoutX="232.0" layoutY="10.0" prefHeight="60.0" prefWidth="505.0" text="choose your dream">
+         <font>
+            <Font name="Cambria" size="48.0" />
+         </font></Label>
+      <HBox fx:id="rvbox" layoutX="4.0" layoutY="81.0" prefHeight="509.0" prefWidth="962.0">
+         <children>
+            <ScrollPane fx:id="rscroll" prefHeight="502.0" prefWidth="956.0">
+               <content>
+                  <GridPane fx:id="rspayer" prefHeight="10.0" prefWidth="22.0">
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <Button layoutX="749.0" layoutY="618.0" mnemonicParsing="false" onAction="#rpayer" prefHeight="30.0" prefWidth="113.0" text="chercher" />
+      <Button fx:id="retourR" layoutX="41.0" layoutY="14.0" mnemonicParsing="false" onAction="#retourR" prefHeight="26.0" prefWidth="73.0" text="ret" />
+      <ComboBox fx:id="rtype1" layoutX="552.0" layoutY="640.0" prefHeight="26.0" prefWidth="103.0" />
+      <TextField fx:id="rbudget1" layoutX="432.0" layoutY="640.0" prefHeight="26.0" prefWidth="94.0" />
+      <DatePicker fx:id="rdate1" layoutX="295.0" layoutY="640.0" prefHeight="26.0" prefWidth="103.0" />
+      <TextField fx:id="rdestination1" layoutX="164.0" layoutY="640.0" prefHeight="26.0" prefWidth="86.0" />
+      <Label layoutX="177.0" layoutY="605.0" text="destination" />
+      <Label layoutX="315.0" layoutY="605.0" text="date-depart" />
+      <Label layoutX="460.0" layoutY="605.0" text="budget" />
+      <Label layoutX="554.0" layoutY="611.0" text="type_evennement" />
+      <Label fx:id="aah" layoutX="236.0" layoutY="678.0" prefHeight="18.0" prefWidth="406.0" />
+      <Label fx:id="aahh" layoutX="236.0" layoutY="57.0" prefHeight="18.0" prefWidth="485.0" />
+   </children>
+</AnchorPane>

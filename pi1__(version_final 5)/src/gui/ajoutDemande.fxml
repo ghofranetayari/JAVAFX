@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLController">
+   <children>
+      <Label layoutX="31.0" layoutY="75.0" text="Ajouter Une Demande D'évenement : ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="148.0" text="Destination :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="201.0" text="Date de depart :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="256.0" text="Thème :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfDestination" layoutX="181.0" layoutY="149.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="tfType" layoutX="181.0" layoutY="256.0" prefHeight="25.0" prefWidth="174.0" />
+      <DatePicker fx:id="dtDateDepart" layoutX="181.0" layoutY="202.0" prefHeight="25.0" prefWidth="174.0" />
+      <Button fx:id="btnAjoutDemande" layoutX="189.0" layoutY="373.0" mnemonicParsing="false" onAction="#saveDemande" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #3db8ff;" text="Valider" textFill="#171717e5">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAffichDemande" layoutX="459.0" layoutY="392.0" mnemonicParsing="false" onAction="#btnAffichDemande" prefHeight="54.0" prefWidth="121.0" style="-fx-background-color: #fffefe; -fx-border-color: #000000;" text="Afficher" textFill="#1b1a1a">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label contentDisplay="BOTTOM" layoutX="33.0" layoutY="291.0" prefHeight="54.0" prefWidth="143.0" text="Votre adresse E mail :" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfEmailDemande" layoutX="181.0" layoutY="306.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="tfMode" visible="false" />
+      <Label layoutX="57.0" layoutY="339.0" text="(facultatif) pour recevoir une notification lorsque votre demande est acceptée">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

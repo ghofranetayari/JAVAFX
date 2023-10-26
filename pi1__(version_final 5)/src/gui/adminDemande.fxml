@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="507.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AdminDemandeController">
+   <children>
+      <TableView fx:id="tvDemande" layoutX="13.0" layoutY="112.0" prefHeight="315.0" prefWidth="659.0">
+        <columns>
+          <TableColumn fx:id="colIdDemande" prefWidth="75.0" text="ID demande" />
+          <TableColumn fx:id="colIdClient" prefWidth="75.0" text="ID client" />
+            <TableColumn fx:id="colDestDemande" prefWidth="155.0" text="Destinatiion" />
+            <TableColumn fx:id="colDateDemande" prefWidth="207.0" text="Date depart" />
+            <TableColumn fx:id="colTypeDemande" prefWidth="146.0" text="thème" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAccpDemande" layoutX="246.0" layoutY="439.0" mnemonicParsing="false" onAction="#approveDemande" style="-fx-background-color: #3db8ff;" text="Accepter la demande" textFill="#f8f5f5" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="21.0" layoutY="78.0" text="Liste des Demandes :">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="586.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PaimentWindowController">
+    <children>
+        <GridPane layoutX="128.0" layoutY="91.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="151.80000915527344" minHeight="10.0" prefHeight="151.80000915527344" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="211.19998779296876" minHeight="10.0" prefHeight="162.8" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="146.40000000000003" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="146.40000000000003" minHeight="10.0" prefHeight="67.59998779296876" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="179.39999999999998" minHeight="10.0" prefHeight="146.80001220703127" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#Payer" prefHeight="40.0" prefWidth="542.0" styleClass="btn" stylesheets="@cardDesign.css" text="Payer" textFill="WHITE" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </Button>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="500.0" text="Payment">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+                <VBox prefHeight="138.0" prefWidth="463.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="48.0" stroke="#3d291d" strokeType="INSIDE" width="465.0">
+                     <fill>
+                        <RadialGradient centerX="0.7411894609224428" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.22128655016422272" green="0.30744248628616333" blue="0.34736841917037964" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.5293020009994507" green="0.6000000238418579" blue="0.5099999904632568" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Rectangle>
+               </children></VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                    <children>
+                        <HBox prefHeight="92.0" prefWidth="455.0">
+                            <children>
+                                <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="121.0" text="numero card">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="numCardField" prefHeight="31.0" prefWidth="177.0" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="89.0" text="EXP mois">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="expMoisField" prefHeight="31.0" prefWidth="48.0" />
+                                <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="89.0" text="EXP année">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="expanneeField" prefHeight="31.0" prefWidth="62.0" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="89.0" text="EXP mois" visible="false">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField prefHeight="25.0" prefWidth="48.0" visible="false" />
+                                <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="27.0" prefWidth="89.0" text="CVV">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="cvvField" prefHeight="31.0" prefWidth="48.0" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="120.0" text="le prix est :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="XprixX" prefHeight="18.0" prefWidth="154.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
+               <children>
+                  <CheckBox fx:id="chekpt" mnemonicParsing="false" onAction="#chekpt" prefHeight="18.0" prefWidth="126.0" text="Utilser points" />
+                  <Label fx:id="fxDiscount" prefHeight="31.0" prefWidth="145.0" />
+               </children>
+            </VBox>
+            </children>
+        </GridPane>
+      <Button layoutX="401.0" layoutY="50.0" mnemonicParsing="false" onAction="#back" prefWidth="62.0" styleClass="btn" stylesheets="@cardDesign.css" text="back" />
+      <ImageView fitHeight="97.0" fitWidth="116.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/HealthConnect.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
